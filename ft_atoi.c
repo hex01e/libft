@@ -6,13 +6,13 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:37:43 by houmanso          #+#    #+#             */
-/*   Updated: 2022/10/10 21:48:57 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/10/22 18:31:20 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_sign(char c, int *i, int *sign)
+static void	ft_sign(char c, int *i, int *sign)
 {
 	if (c == '-')
 	{
