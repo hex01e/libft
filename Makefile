@@ -6,7 +6,7 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/08 22:47:56 by houmanso          #+#    #+#              #
-#    Updated: 2022/10/24 01:43:54 by houmanso         ###   ########.fr        #
+#    Updated: 2022/10/24 19:43:48 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,21 +20,21 @@ SRC = ft_atoi.c ft_isalpha.c ft_isprint.c ft_strchr.c  ft_strlen.c ft_strrchr.c\
 		ft_strtrim.c ft_split.c
 OBJ = ${SRC:.c=.o}
 
+	
 all: ${NAME}
 
 ${NAME} : ${OBJ}
 	@ar rc $@ ${OBJ}
 
 %.o : %.c libft.h
-	@${CC} ${CFLAGS} -c $<
+	${CC} ${CFLAGS} -c $<
 	
 clean :
 	@rm -f ${OBJ}
 	
 fclean : clean
 	@rm -f ${NAME}
-
+	
 re : fclean all
 
-
-.PHONY : all clean fclean re
+.PHONY : all clean fclean re 
