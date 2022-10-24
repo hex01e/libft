@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:53:54 by houmanso          #+#    #+#             */
-/*   Updated: 2022/10/22 10:58:11 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/10/24 01:44:16 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 
 char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *s, int c);
+char	**ft_split(char const *s, char c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);

@@ -6,7 +6,7 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/08 22:47:56 by houmanso          #+#    #+#              #
-#    Updated: 2022/10/22 10:57:41 by houmanso         ###   ########.fr        #
+#    Updated: 2022/10/24 01:43:54 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC = ft_atoi.c ft_isalpha.c ft_isprint.c ft_strchr.c  ft_strlen.c ft_strrchr.c\
 		ft_bzero.c ft_isascii.c ft_memcpy.c ft_strlcat.c ft_strncmp.c ft_tolower.c\
 		ft_isalnum.c ft_isdigit.c ft_memset.c ft_strlcpy.c ft_strnstr.c ft_toupper.c\
 		ft_memchr.c ft_memcmp.c ft_memmove.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c\
-		ft_strtrim.c
+		ft_strtrim.c ft_split.c
 OBJ = ${SRC:.c=.o}
 
 all: ${NAME}
