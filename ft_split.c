@@ -6,13 +6,12 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 02:24:02 by houmanso          #+#    #+#             */
-/*   Updated: 2022/10/24 23:15:55 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:44:02 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-//#define malloc(size) malloc(size);printf("(%d)",size)
+
 static int	count_chars(const char *s, char c)
 {
 	int	i;
