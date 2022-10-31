@@ -6,7 +6,7 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/08 22:47:56 by houmanso          #+#    #+#              #
-#    Updated: 2022/10/29 17:34:14 by houmanso         ###   ########.fr        #
+#    Updated: 2022/10/30 23:43:08 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,8 +53,10 @@ OBJ    = ${SRC:.c=.o}
 B_SRC  = ft_lstnew_bonus.c \
 		 ft_lstadd_front_bonus.c \
 		 ft_lstsize_bonus.c \
-		 ft_lstsize_bonus.c \
-		 ft_lstlast_bonus.c
+		 ft_lstlast_bonus.c \
+		 ft_lstadd_back_bonus.c \
+		 ft_lstdelone_bonus.c \
+		 ft_lstclear_bonus.c
 
 B_OBJ    = ${B_SRC:.c=.o}
 	
