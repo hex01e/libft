@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 23:42:41 by houmanso          #+#    #+#             */
-/*   Updated: 2022/10/31 00:11:04 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/10/31 14:26:16 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list	*next;
+	t_list	*nxt;
 
+	nxt = *lst;
 	if (lst && *lst)
 	{
-		while ((*lst)->next)
+		while (nxt)
 		{
-			next = (*lst)->next;
+			nxt = (*lst)->next;
 			ft_lstdelone(*lst, del);
-			*lst = next;
+			*lst = nxt;
 		}
 	}
-	lst = NULL;
 }
