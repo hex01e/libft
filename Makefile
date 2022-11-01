@@ -6,13 +6,14 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/08 22:47:56 by houmanso          #+#    #+#              #
-#    Updated: 2022/10/30 23:43:08 by houmanso         ###   ########.fr        #
+#    Updated: 2022/11/01 02:27:45 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME   = libft.a
 CFLAGS = -Wall -Wextra -Werror
 
+#mandatory
 SRC    = ft_atoi.c \
 		 ft_isalpha.c \
 		 ft_isprint.c \
@@ -50,13 +51,16 @@ SRC    = ft_atoi.c \
 
 OBJ    = ${SRC:.c=.o}
 
+#bonus
 B_SRC  = ft_lstnew_bonus.c \
 		 ft_lstadd_front_bonus.c \
 		 ft_lstsize_bonus.c \
 		 ft_lstlast_bonus.c \
 		 ft_lstadd_back_bonus.c \
 		 ft_lstdelone_bonus.c \
-		 ft_lstclear_bonus.c
+		 ft_lstclear_bonus.c \
+		 ft_lstiter_bonus.c \
+		 ft_lstmap_bonus.c
 
 B_OBJ    = ${B_SRC:.c=.o}
 	
