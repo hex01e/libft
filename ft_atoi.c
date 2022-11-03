@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:37:43 by houmanso          #+#    #+#             */
-/*   Updated: 2022/10/22 18:31:20 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/11/03 15:12:02 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int	ft_atoi(const char *str)
 		nbr = nbr * 10 + str[i] - '0';
 		i++;
 	}
-	if (nbr >= 9223372036854775807 && sign == -1)
+	if (nbr >= 9223372036854775807 && sign == 1)
 		return (-1);
-	else if (nbr > 9223372036854775807 && sign == 1)
+	else if (nbr > 9223372036854775807 && sign == -1)
 		return (0);
 	return ((int) nbr * sign);
 }
