@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:37:43 by houmanso          #+#    #+#             */
-/*   Updated: 2022/11/03 15:12:02 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/11/03 16:11:32 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ static void	ft_sign(char c, int *i, int *sign)
 
 int	ft_atoi(const char *str)
 {
-	unsigned long long	nbr;
-	int					sign;
-	int					i;
+	size_t	nbr;
+	int		sign;
+	int		i;
 
 	i = 0;
 	nbr = 0;
